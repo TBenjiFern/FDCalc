@@ -5,49 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Freeze-Dried Breastmilk Calculator">
     <title>Freeze-Dried Breastmilk Calculator</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
     <main>
         <h2 class="pageTitle">Freeze-Dried Breastmilk: Reconstitution Ratio</h1>
+        <div class="bodyContainer">
+            <div class="usCalculatorContainer">
+                <button type="button" class="collapsible">Expand FD Breastmilk Reconstitution Calculator <strong>(US Fluid oz Conversion)</strong></button>
+                <div class="fdCalculator">
+                    <div class="reconstitutionCalc">
+                        <h3 class="reconstTitle">Reconstitution Ratio Calculator</h1>
+                        <div class="reconstInputs">
+                            <label for="usPreFDWeight">Pre-Freeze-Dried Weight (g):</label>
+                            <input type="number" id="usPreFDWeight" name="usPreFDWeight" class="inputBox"><br><br>
+                            <label for="usPostFDWeight">Post-Freeze-Dried Weight (g):</label>
+                            <input type="number" id="usPostFDWeight" name="usPostFDWeight" class="inputBox"><br><br>
+                            <input type="submit" id="usCalcRatioSubmit" value="Calculate Ratio" class="reconstCalcSubmit">
+                        </div>
+                        
+                        <div class="reconstResult">
+                            <p>Your Reconstitution Ratio is:</p>
+                            <p id="usReconstResultBoxG" style="font-weight: bold;"></p>
+                            <p id="usReconstResultBoxOz" style="font-weight: bold;"></p>
+                        </div>
+                    </div>          
+    
+                    <br>
+    
+                    <div class="powderNeededCalc">
+                        <h3 class="powderCalcTitle">Powder Needed Calculator</h1>
+                        <div class="powderNeededInputs">
+                            <label for="usDesiredH2O">Desired H2O Amount (oz)</label>
+                            <input type="number" id="usDesiredH2O" name="usDesiredH2O" class="inputBox"><br><br>
+                            <label for="usWaterToPowderRatio">Reconstitution Ratio (oz/g)</label>
+                            <input type="number" id="usWaterToPowderRatio" name="usWaterToPowderRatio" class="inputBox"><br><br>
+                            <input type="submit" id="usCalcPowderNeededSubmit" value="Calculate Powder">
+                        </div>
+    
+                        <div class="powderNeededResult">
+                            <p>Amount of Powder Needed:</p>
+                            <p id="usPowderNeeded" style="font-weight: bold;"></p>
+                            <p id="usSecondaryPowderWarning" style="font-weight: bold;"></p>
+                        </div>
+                    </div>        
+                </div> 
+            </div>
+            
+            <!-- UK Fluid oz Conversion-->
+            <div class="ukCalculatorContainer">
+                <button type="button" class="collapsible">Expand FD Breastmilk Reconstitution Calculator <strong>(UK Fluid oz Conversion)</strong></button>
+                <div class="fdCalculator">
+                    <div class="reconstitutionCalc">
+                        <h3 class="reconstTitle">Reconstitution Ratio Calculator</h1>
+                        <div class="reconstInputs">
+                            <label for="ukPreFDWeight">Pre-Freeze-Dried Weight (g):</label>
+                            <input type="number" id="ukPreFDWeight" name="ukPreFDWeight" class="inputBox"><br><br>
+                            <label for="ukPostFDWeight">Post-Freeze-Dried Weight (g):</label>
+                            <input type="number" id="ukPostFDWeight" name="ukPostFDWeight" class="inputBox"><br><br>
+                            <input type="submit" id="ukCalcRatioSubmit" value="Calculate Ratio">
+                        </div>
+                        
+                        <div class="reconstResult">
+                            <p>Your Reconstitution Ratio is:</p>
+                            <p id="ukReconstResultBoxG" style="font-weight: bold;"></p>
+                            <p id="ukReconstResultBoxOz" style="font-weight: bold;"></p>
+                        </div>
+                    </div>          
 
-        <div class="fdCalculator">
-            <div class="reconstitutionCalc">
-                <h3 class="reconstTitle">Reconstitution Ratio Calculator</h1>
-                <div class="reconstInputs">
-                    <label for="preFDWeight">Pre-Freeze-Dried Weight (g):</label>
-                    <input type="number" id="preFDWeight" name="preFDWeight"><br><br>
-                    <label for="postFDWeight">Post-Freeze-Dried Weight (g):</label>
-                    <input type="number" id="postFDWeight" name="postFDWeight"><br><br>
-                    <input type="submit" id="calcRatioSubmit" value="Calculate Reconstitution Ratio">
-                </div>
-                
-                <div class="reconstResult">
-                    <p>Your Reconstitution Ratio is:</p>
-                    <p id="reconstResultBoxG" style="font-weight: bold;"></p>
-                    <p id="reconstResultBoxOz" style="font-weight: bold;"></p>
-                </div>
-            </div>          
+                    <br>
 
-            <br>
+                    <div class="powderNeededCalc">
+                        <h3 class="powderCalcTitle">Powder Needed Calculator</h1>
+                        <div class="powderNeededInputs">
+                            <label for="ukDesiredH2O">Desired H2O Amount (oz)</label>
+                            <input type="number" id="ukDesiredH2O" name="ukDesiredH2O" class="inputBox"><br><br>
+                            <label for="ukWaterToPowderRatio">Reconstitution Ratio (oz/g)</label>
+                            <input type="number" id="ukWaterToPowderRatio" name="ukWaterToPowderRatio" class="inputBox"><br><br>
+                            <input type="submit" id="ukCalcPowderNeededSubmit" value="Calculate Powder">
+                        </div>
 
-            <div class="powderNeededCalc">
-                <h3 class="powderCalcTitle">Powder Needed Calculator</h1>
-                <div class="powderNeededInputs">
-                    <label for="desiredH2O">Desired H2O Amount (oz)</label>
-                    <input type="number" id="desiredH2O" name="desiredH2O"><br><br>
-                    <label for="waterToPowderRatio">Reconstitution Ratio (oz/g)</label>
-                    <input type="number" id="waterToPowderRatio" name="waterToPowderRatio"><br><br>
-                    <input type="submit" id="calcPowderNeededSubmit" value="Calculate Amount of Powder Needed">
-                </div>
-
-                <div class="powderNeededResult">
-                    <p>Amount of Powder Needed:</p>
-                    <p id="powderNeeded" style="font-weight: bold;"></p>
-                    <p id="secondaryPowderWarning" style="font-weight: bold;"></p>
-                </div>
-            </div>        
-        </div>
+                        <div class="powderNeededResult">
+                            <p>Amount of Powder Needed:</p>
+                            <p id="ukPowderNeeded" style="font-weight: bold;"></p>
+                            <p id="ukSecondaryPowderWarning" style="font-weight: bold;"></p>
+                        </div>
+                    </div> 
+                </div>                 
+            </div>     
+        </div>            
     </main>
 
     <script src="js/script.js"></script>

@@ -1,0 +1,145 @@
+@media only screen and (min-width: 730px) {
+    .bodyContainer {
+        text-align: -webkit-center;    
+    }
+
+    .usCalculatorContainer {
+        margin: 10px;
+    }
+
+    .ukCalculatorContainer {
+        margin: 10px;
+    }
+
+    .collapsible {
+        background-color: #FFFDD0;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 80%;
+        border: thick double black;
+        text-align: -webkit-center;    
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #dcddc9;
+        font-weight: bold;
+    }
+
+    .collapsible:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+
+    .fdCalculator {
+        text-align: -webkit-center;
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .reconstitutionCalc {
+        margin-top: 10px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #FFFDD0;
+        border: thick double black;
+        box-shadow: 2px 2px 8px;
+    }
+
+    .reconstInputs {
+        margin: 16px;
+        margin-bottom: 10px;
+        padding: 10px;
+        height: auto;
+        grid-column: 1/2;
+        background: #dcddc9;
+        border-radius: 10px;
+        border: thick double black;
+        text-align-last: center;
+        box-shadow: 1px 1px 5px;
+    }
+
+    .reconstResult {
+        margin: 16px;
+        padding: 10px;
+        grid-column: 2/3;
+        height: auto;
+        min-height: 120px;
+        background: #dcddc9;
+        border: thick double black;
+        border-radius: 10px;
+        text-align-last: center;
+        align-self: center;
+        box-shadow: 1px 1px 5px;
+    }
+
+    .powderNeededCalc {
+        width: 80%;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #FFFDD0;
+        border: thick double black;
+        box-shadow: 2px 2px 8px;
+    }
+
+    .powderNeededInputs {
+        margin: 16px;
+        padding: 10px;
+        grid-column: 1/2;
+        height: auto;
+        background: #dcddc9;
+        border-radius: 10px;
+        border: thick double black;
+        text-align-last: center;
+        box-shadow: 1px 1px 5px;
+    }
+
+    .powderNeededResult{
+        margin: 16px;
+        padding: 10px;
+        grid-column: 2/3;
+        height: auto;
+        min-height: 85px;
+        background: #dcddc9;
+        border: thick double black;
+        border-radius: 10px;
+        text-align-last: center;
+        align-self: center;
+        box-shadow: 1px 1px 5px;
+    }
+
+    .pageTitle {
+        text-align-last: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .reconstTitle {
+        grid-column: 1/3;
+        text-align-last: center;
+        padding-top: 4px;    
+        margin: 3px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .powderCalcTitle {
+        grid-column: 1/3;
+        text-align-last: center;
+        padding-top: 4px;    
+        margin: 3px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
